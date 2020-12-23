@@ -1,0 +1,102 @@
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: dashed;
+    padding: 10px;
+    margin: 10px;
+    border-start-end-radius: 5%;
+    height: 200px;
+    width: 90%;
+    background-color: greenyellow;
+}
+.Pomegranate{
+    height: 160px;
+}
+.heart {
+    display: flex;
+    color: black;
+    background-color: currentColor;
+    height: 50px;
+    position: relative;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 50px;
+    margin-top: -15px;
+  }
+  .heart1-checkbox {
+    display: none;
+  }
+  .heart2-checkbox {
+    display: none;
+  }
+  .heart3-checkbox {
+    display: none;
+  }
+  .heart::before,
+  .heart::after {
+    content: "";
+    background-color: currentColor;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+  .heart:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 25px;
+    top: 0;
+  }
+  .heart1-checkbox:checked + .heart {
+    color: red;
+  }
+  .heart2-checkbox:checked + .heart {
+    color: red;
+  }
+  .heart3-checkbox:checked + .heart {
+    color: red;
+  }
+.delete{
+    height: 60px;
+    width: 60px;
+}
+.UPP{
+    display: flex;
+    border: 1PX solid black;
+    height: 40px;
+    width: 60px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: larger;
+}
+.item{
+    font-style: italic;
+    font-family: fantasy;
+    font-size: larger;
+}
+.tip{
+    font-style: italic;
+    font-family: fantasy;
+    font-size: larger;
+}
+.Fig{
+    height: 160px;
+    width: 120px;
+}
+.evoo{
+    height: 160px;
+}
+.cff{
+  width: 100px;
+}
+.total{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}

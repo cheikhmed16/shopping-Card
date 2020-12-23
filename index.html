@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <section class="section">
+           
+            <div> 
+                <img class="cff" src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/72941810_2421769638064131_4622830792840577024_n.jpg?_nc_cat=108&ccb=2&_nc_sid=8bfeb9&_nc_ohc=zpBHQ1W_tp4AX-oiuUY&_nc_ht=scontent.ftun3-1.fna&oh=116cc6e9b5d3160f6446ce69e120e1a5&oe=60073F6B" alt="img">
+            </div>
+            <p class="total" onchange="total('price1','price2','price3','Totalprice')">Total Price</p>
+            <span id="Totalprice">000</span>
+
+        </section>
+        <section class="section" id="demo1">
+            <button class="delete" onclick="myFunction1()">X</button>
+            <div id="red" draggable="true">
+                <div class="wrapper1">
+                    <input type="checkbox" class="heart1-checkbox" id="heart1-checkbox">
+                    <label class="heart" for="heart1-checkbox"></label>
+                </div>
+            </div>
+            <img class="Pomegranate" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPZeYbboXopoN5hHFKRVfjG6-coIrDN_KvQ&usqp=CAU" alt="img1">
+            <p class="item">Pomegranate</p>
+            <span class="UPP">100</span>
+            <button id='add1' onclick="increase('inp1','price1',100,'Totalprice')">++</button>
+            <input id='inp1' type="text" placeholder="0">
+            <button id="decrease" onclick="decrease('inp1','price1',100,'Totalprice')">--</button>
+            <span class="tip" id='price1'>0</span>
+        </section>
+        <section class="section" id="demo2">
+            <button class="delete" onclick="myFunction2()">X</button>
+            <div id="red" draggable="true">
+                <div class="wrapper2">
+                    <input type="checkbox" class="heart2-checkbox" id="heart2-checkbox">
+                    <label class="heart" for="heart2-checkbox"></label>
+                </div>
+            </div>
+            <img class="Fig" src="https://scontent.ftun6-1.fna.fbcdn.net/v/t1.0-0/s600x600/98347064_2586690114905415_8855567165227532288_n.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=SyAW6BzAjR8AX9x9U6O&_nc_ht=scontent.ftun6-1.fna&tp=7&oh=9599505a4159afc28b25d5fe37dd0446&oe=60088687" alt="img2">
+            <p class="item">Fig</p>
+            <span class="UPP">200</span>
+            <button id='add2' onclick="increase('inp2','price2',200,'Totalprice')">++</button>
+            <input id='inp2' type="text" placeholder="0">
+            <button id="decrease" onclick="decrease('inp2','price2',200,'Totalprice')">--</button>
+            <span class="tip" id='price2'>0</span>
+        </section>
+        <section class="section" id="demo3">
+            <button class="delete" onclick="myFunction3()">X</button>
+            <div id="red" draggable="true">
+                <div class="wrapper3">
+                    <input type="checkbox" class="heart3-checkbox" id="heart3-checkbox">
+                    <label class="heart" for="heart3-checkbox"></label>
+                </div>
+            </div>
+            <img class="evoo" src="https://scontent.ftun6-1.fna.fbcdn.net/v/t1.0-9/88325814_2525958117645282_6212962569267707904_n.jpg?_nc_cat=105&ccb=2&_nc_sid=8bfeb9&_nc_ohc=EvgQCLCu1A8AX-4QvTJ&_nc_ht=scontent.ftun6-1.fna&oh=6fb5a64d9040a06b4ea3cad333545fa7&oe=6004CEFB" alt="img3">
+            <p class="item">EVOO</p>
+            <span class="UPP">300</span>
+            <button id='add3' onclick="increase('inp3','price3',300,'Totalprice')">++</button>
+            <input id='inp3' type="text" placeholder="0">
+            <button id="decrease" onclick="decrease('inp3','price3',300,'Totalprice')">--</button>
+            <span class="tip" id='price3'>0</span>
+        </section>
+        
+    </div>
+    <script src='DOM.js'></script>
+</body>
+</html>
